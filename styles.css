@@ -36,8 +36,9 @@ html, body {
     transition: background-color 0.3s ease, transform 0.2s ease;
     justify-content: center;
 }
-.cta-button {
-    
+.cta-button:hover {
+    background-color: var(--color-celeste);
+    transform: scale(1.05);
 }
 
 
@@ -45,6 +46,16 @@ html, body {
     color: var(--color-blanco);
     font-weight: bold;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.texto{
+    color: #171515a0;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    text-align: center;
 }
 
 .footer {
