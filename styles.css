@@ -1,0 +1,57 @@
+:root {
+    --color-azul: #0072ff;
+    --color-celeste: #00c6ff;
+    --color-blanco: #FFFFFF; 
+}
+
+@font-face {
+    font-family: 'Peace Sans';
+    src: url('fonts/PeaceSans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(to right, #6BE1DE, #2C64D0);
+    margin: 0;
+    font-family: Peace Sans;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-button button {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-content: center;
+}
+.cta-button {
+    
+}
+
+
+.titulo{
+    color: var(--color-blanco);
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    font-size: 14px;
+}
