@@ -1,6 +1,6 @@
 :root {
-    --color-azul: #0072ff;
-    --color-celeste: #00c6ff;
+    --color-azul: #2C64D0;
+    --color-celeste: #6BE1DE;
     --color-blanco: #FFFFFF; 
 }
 
@@ -24,17 +24,18 @@ html, body {
 }
 
 header {
-    display: flex;
-    flex-direction: column;  
-    align-items: center;    
-    justify-content: center; 
-    text-align: center;      
-    height: 100vh;           
+    margin-top: 20px;
+    color: var(--color-blanco);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
 .imagen-con-titulo {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
     align-items: center;  
     justify-content: center;
 }
@@ -45,6 +46,7 @@ header {
     display: block;  
     margin-bottom: 10px; 
 }
+
 .titulo {
     color: var(--color-blanco);
     font-weight: bold;
@@ -52,14 +54,7 @@ header {
     border-radius: 15px;
     text-align: center;
     margin-top: 0;
-}
-
-.texto {
-    color: #000000;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 15px;
-    text-align: center;
+    font-size: 2.5rem;
 }
 
 .cta-button {
@@ -75,14 +70,13 @@ header {
     transition: background-color 0.3s ease, transform 0.2s ease;
     display: flex;
     justify-content: center;
-    width: 100px;
+    width: 150px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 .cta-button:hover {
     background-color: var(--color-celeste);
-    transform: scale(1.05);
-    transition: all .5s;
     transform: scale(1.1);
     box-shadow: 0px 3px 5px rgba(0,0,0,.4);
 }
@@ -95,4 +89,36 @@ header {
     margin-top: auto;
     font-size: 14px;
     width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .imagenLogo {
+        height: 100px; 
+    }
+
+    .cta-button {
+        width: 80%;
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .imagenLogo {
+        height: 80px;
+    }
+
+    .cta-button {
+        width: 90%;
+        font-size: 13px;
+    }
 }
