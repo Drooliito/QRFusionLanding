@@ -14,7 +14,8 @@
 body {
     background: linear-gradient(to right, #6BE1DE, #2C64D0);
     margin: 0;
-    font-family: Peace Sans;
+    font-family: 'Peace Sans', sans-serif;
+                                                
 }
 
 html, body {
@@ -27,7 +28,6 @@ html, body {
 .cta-button button {
     background-color: var(--color-azul);
     color: var(--color-blanco);
-    border: none;
     padding: 15px 30px;
     font-size: 16px;
     font-weight: bold;
@@ -42,6 +42,7 @@ html, body {
 }
 
 
+
 .titulo{
     color: var(--color-blanco);
     font-weight: bold;
@@ -51,9 +52,9 @@ html, body {
 }
 
 .texto{
-    color: #171515a0;
+    color: #000000;
+    font-size: 16px;
     font-weight: bold;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
     text-align: center;
 }
